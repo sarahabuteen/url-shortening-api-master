@@ -39,7 +39,7 @@ export const Header = () => {
           </Nav>
           <Nav className="ml-auto" navbar>
             <NavbarText>Login</NavbarText>
-            <NavItem>
+            <NavItem className="responsive-width">
               <button className="btn btn-cyan">Sign Up</button>
             </NavItem>
           </Nav>

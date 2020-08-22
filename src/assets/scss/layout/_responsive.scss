@@ -1,4 +1,31 @@
 @media (max-width: 768px) {
+  .navbar {
+    .navbar-toggler {
+      border-color: transparent;
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        align-items: center;
+        .nav-item {
+          .nav-link {
+            padding-right: 0;
+            padding-bottom: 0;
+          }
+        }
+        .navbar-text {
+          padding-right: 0;
+          padding-bottom: 15px;
+        }
+        .responsive-width {
+          width: 80%;
+          .btn-cyan {
+            min-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   .hero-section {
     padding: 20px 0 150px 0;
     text-align: center;
