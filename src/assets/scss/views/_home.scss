@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 70px 0;
+  padding: 70px 0 110px 0;
   h1 {
     font-weight: 700;
     font-size: 68px;
@@ -11,5 +11,77 @@
   }
   .btn-cyan {
     min-width: 150px;
+  }
+}
+
+.statistics {
+  padding: 200px 0 100px 0;
+  background-color: rgb(239, 241, 247);
+  h2 {
+    font-weight: 700;
+  }
+  .subtitle {
+    font-size: 18px;
+    width: 48%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .statistics-box {
+    background-color: $white;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 250px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 70px;
+    &::after {
+      content: "";
+      width: 100px;
+      height: 8px;
+      background: $cyan;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(0, -100%);
+    }
+    &.middle {
+      margin-top: 110px;
+    }
+    &.last {
+      margin-top: 150px;
+      &::after {
+        width: 0px;
+      }
+    }
+    .icon {
+      background-color: $dark-violet;
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -35px;
+      img {
+        object-fit: contain;
+        height: 35px;
+        width: 35px;
+      }
+    }
+    h4 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+    p {
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
   }
 }
