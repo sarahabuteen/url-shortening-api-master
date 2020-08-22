@@ -1,5 +1,7 @@
 .hero-section {
   padding: 70px 0 150px 0;
+  position: relative;
+  overflow: hidden;
   h1 {
     font-weight: 700;
     font-size: 68px;
@@ -11,10 +13,9 @@
   }
 }
 
-.shorten {
-  height: 170px;
-  background: $dark-violet url("../../images/bg-shorten-desktop.svg") no-repeat
-    left top;
+.shorten-section {
+  min-height: 170px;
+  background: $dark-violet url("../../images/bg-shorten-desktop.svg") no-repeat;
   border-radius: 8px;
   position: absolute;
   top: -80px;
@@ -37,7 +38,7 @@
   }
 }
 
-.statistics {
+.statistics-section {
   padding: 200px 0 100px 0;
   background-color: rgb(239, 241, 247);
   position: relative;
@@ -110,7 +111,7 @@
   }
 }
 
-.boost {
+.boost-section {
   height: 250px;
   background: $dark-violet url("../../images/bg-boost-desktop.svg") no-repeat
     left top;

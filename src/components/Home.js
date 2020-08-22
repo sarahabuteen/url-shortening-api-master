@@ -12,7 +12,7 @@ export default class Home extends Component {
         <section className="hero-section">
           <Container>
             <Row className="d-flex align-items-center">
-              <Col md={6}>
+              <Col md={6} className="order-md-1 order-2">
                 <h1 className="dark-blue-text">More than just shorter links</h1>
                 <p className="grayish-violet-text">
                   Build your brand's recognition and get detailed insights on
@@ -20,16 +20,16 @@ export default class Home extends Component {
                 </p>
                 <button className="btn btn-cyan">Get Started</button>
               </Col>
-              <Col md={6}>
+              <Col md={6} className="order-md-2 order-1">
                 <img src={illustration} alt="illustration" className="ml-5" />
               </Col>
             </Row>
           </Container>
         </section>
 
-        <section className="statistics">
+        <section className="statistics-section">
           <Container>
-            <section className="shorten d-flex align-items-center justify-content-center">
+            <section className="shorten-section d-flex align-items-center justify-content-center">
               <Row className="w-100">
                 <Col md={9}>
                   <Input placeholder="Shorten a link here..." />
@@ -93,7 +93,7 @@ export default class Home extends Component {
           </Container>
         </section>
 
-        <section className="boost d-flex align-items-center justify-content-center">
+        <section className="boost-section d-flex align-items-center justify-content-center">
           <Container>
             <Row>
               <Col md={12} className="d-flex flex-column align-items-center">

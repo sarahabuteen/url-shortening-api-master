@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px 0 150px 0;
+    text-align: center;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 17px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+
+  .shorten-section {
+    width: 90%;
+    padding: 0 15px;
+    background: $dark-violet url("../../images/bg-shorten-mobile.svg") no-repeat
+      right top;
+    .form-control {
+      margin-bottom: 15px;
+    }
+  }
+
+  .statistics-section {
+    padding: 150px 0 100px 0;
+    .subtitle {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .statistics-box {
+      margin-top: 70px;
+      align-items: center;
+      &.middle,
+      &.last {
+        margin-top: 70px;
+      }
+      &::after {
+        display: none;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .boost-section {
+    background: $dark-violet url("../../images/bg-boost-mobile.svg") no-repeat
+      right;
+  }
+  .footer {
+    text-align: center;
+    .logo {
+      margin-bottom: 35px;
+    }
+    .footer-list {
+      margin-bottom: 25px !important;
+      li {
+        margin-bottom: 10px !important;
+      }
+    }
+    .social-links {
+      justify-content: center !important;
+      padding-top: 25px;
+      li {
+        padding-right: 10px;
+        &:last-child {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}
