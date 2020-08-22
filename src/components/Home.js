@@ -80,6 +80,17 @@ export default class Home extends Component {
             </Row>
           </Container>
         </section>
+
+        <section className="boost d-flex align-items-center justify-content-center">
+          <Container>
+            <Row>
+              <Col md={12} className="d-flex flex-column align-items-center">
+                <h2 className="text-white">Boost your links today</h2>
+                <button className="btn btn-cyan">Get Started</button>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </React.Fragment>
     );
   }

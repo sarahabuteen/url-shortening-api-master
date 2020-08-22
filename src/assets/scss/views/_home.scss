@@ -9,9 +9,6 @@
     width: 80%;
     margin-bottom: 25px;
   }
-  .btn-cyan {
-    min-width: 150px;
-  }
 }
 
 .statistics {
@@ -83,5 +80,15 @@
       font-size: 16px;
       margin-bottom: 0px;
     }
+  }
+}
+
+.boost {
+  height: 250px;
+  background: $dark-violet url("../../images/bg-boost-desktop.svg") no-repeat
+    left top;
+  h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
   }
 }
