@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 70px 0 110px 0;
+  padding: 70px 0 150px 0;
   h1 {
     font-weight: 700;
     font-size: 68px;
@@ -11,9 +11,36 @@
   }
 }
 
+.shorten {
+  height: 170px;
+  background: $dark-violet url("../../images/bg-shorten-desktop.svg") no-repeat
+    left top;
+  border-radius: 8px;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 30px;
+  .form-control {
+    height: 50px;
+    border: none;
+    &::placeholder {
+      color: $grayish-violet;
+    }
+  }
+  .btn-cyan {
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+  }
+}
+
 .statistics {
   padding: 200px 0 100px 0;
   background-color: rgb(239, 241, 247);
+  position: relative;
   h2 {
     font-weight: 700;
   }

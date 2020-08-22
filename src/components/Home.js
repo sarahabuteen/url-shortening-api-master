@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Input } from "reactstrap";
 
 import illustration from "../assets/images/illustration-working.svg";
 import brandRecognition from "../assets/images/icon-brand-recognition.svg";
@@ -28,6 +28,18 @@ export default class Home extends Component {
         </section>
 
         <section className="statistics">
+          <Container>
+            <section className="shorten d-flex align-items-center justify-content-center">
+              <Row className="w-100">
+                <Col md={9}>
+                  <Input placeholder="Shorten a link here..." />
+                </Col>
+                <Col md={3}>
+                  <button className="btn btn-cyan">Shorten It!</button>
+                </Col>
+              </Row>
+            </section>
+          </Container>
           <Container>
             <Row>
               <Col md={12} className="d-flex flex-column align-items-center">
