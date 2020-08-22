@@ -1,0 +1,38 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/**
+ *
+ * Variables
+ *
+ */
+@import "abstracts/variables";
+
+/**
+ *
+ * Typography
+ *
+ */
+@import "base/typography";
+
+/**
+ *
+ * Views
+ *
+ */
+@import "views/home";
+
+/**
+ *
+ * Layout
+ *
+ */
+@import "layout/shared";
+
+/**
+ *
+ * Components
+ *
+ */
+@import "components/navbar";
+@import "components/footer";
+@import "components/buttons";

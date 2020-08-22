@@ -1,0 +1,13 @@
+body {
+  font-family: $main-font;
+}
+
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
+}
