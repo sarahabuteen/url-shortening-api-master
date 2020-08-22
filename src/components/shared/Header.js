@@ -13,7 +13,7 @@ import {
 
 import logo from "../../assets/images/logo.svg";
 
-export const Header = props => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -40,7 +40,7 @@ export const Header = props => {
           <Nav className="ml-auto" navbar>
             <NavbarText>Login</NavbarText>
             <NavItem>
-              <button className="btn rounded-btn">Sign Up</button>
+              <button className="btn btn-cyan">Sign Up</button>
             </NavItem>
           </Nav>
         </Collapse>
