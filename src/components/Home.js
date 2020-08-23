@@ -29,18 +29,68 @@ export default class Home extends Component {
 
         <section className="statistics-section">
           <Container>
-            <section className="shorten-section d-flex align-items-center justify-content-center">
+            <section className="shorten-section d-flex flex-column justify-content-center">
               <Row className="w-100">
                 <Col md={9}>
-                  <Input placeholder="Shorten a link here..." />
+                  <Input
+                    placeholder="Shorten a link here..."
+                    className="input-error"
+                  />
                 </Col>
                 <Col md={3}>
                   <button className="btn btn-cyan">Shorten It!</button>
                 </Col>
               </Row>
+              <Row>
+                <Col md={12}>
+                  <small className="red-text">Please add a link</small>
+                </Col>
+              </Row>
             </section>
           </Container>
           <Container>
+            {/* <section className="urls-section">
+              <Row>
+                <Col md={12}>
+                  <ul className="list-unstyled urls-list">
+                    <li className="url-box d-flex align-items-center">
+                      <Row className="w-100 mx-auto">
+                        <Col md={6} className="d-flex align-items-center">
+                          <h6 className="mb-0">http://localhost:3000/</h6>
+                        </Col>
+                        <Col
+                          md={6}
+                          className="d-flex align-items-center justify-content-end"
+                        >
+                          <h6 className="cyan-text mb-0">
+                            http://localhost:3000/
+                          </h6>
+                          <button className="btn btn-sm btn-cyan">Copy</button>
+                        </Col>
+                      </Row>
+                    </li>
+                    <li className="url-box d-flex align-items-center">
+                      <Row className="w-100 mx-auto">
+                        <Col md={6} className="d-flex align-items-center">
+                          <h6 className="mb-0">http://localhost:3000/</h6>
+                        </Col>
+                        <Col
+                          md={6}
+                          className="d-flex align-items-center justify-content-end"
+                        >
+                          <h6 className="cyan-text mb-0">
+                            http://localhost:3000/
+                          </h6>
+                          <button className="btn btn-sm btn-violet">
+                            Copied!
+                          </button>
+                        </Col>
+                      </Row>
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+            </section> */}
             <Row>
               <Col md={12} className="d-flex flex-column align-items-center">
                 <h2 className="dark-blue-text">Advanced Statistics</h2>
