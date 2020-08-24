@@ -10,15 +10,6 @@ export default class LinksList extends Component {
 
   /**
    *
-   * Open link in new tab
-   *
-   */
-  openLink = url => {
-    window.open(url, "_blank");
-  };
-
-  /**
-   *
    * Copy for clicked button only
    *
    */
@@ -42,18 +33,13 @@ export default class LinksList extends Component {
                   >
                     <Row className="w-100 mx-auto">
                       <Col md={6} className="d-flex align-items-center">
-                        <h6 className="mb-0">{link.url}</h6>
+                        <h6 className="mb-0 small">{link.url}</h6>
                       </Col>
                       <Col
                         md={4}
                         className="d-flex align-items-center justify-content-end"
                       >
-                        <h6
-                          className="cyan-text mb-0 clickable"
-                          onClick={() =>
-                            this.openLink(`https://rel.ink/${link.hashid}`)
-                          }
-                        >
+                        <h6 className="cyan-text mb-0">
                           https://rel.ink/{link.hashid}
                         </h6>
                       </Col>
