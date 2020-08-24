@@ -1,4 +1,30 @@
-.footer{
-    background-color: $very-dark-violet;
-    padding: 70px 0;
+.footer {
+  background-color: $very-dark-violet;
+  padding: 70px 0;
+  .footer-list {
+    li {
+      cursor: pointer;
+      &:hover {
+        color: $cyan;
+        transition: color ease-out 0.3s;
+      }
+    }
+  }
+  .social-links {
+    li {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.6;
+        transition: opacity ease-out 0.3s;
+      }
+    }
+  }
+}
+
+.attribution {
+  background-color: $grayish-violet;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
