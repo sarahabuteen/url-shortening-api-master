@@ -1,11 +1,24 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Input } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 import illustration from "../assets/images/illustration-working.svg";
 import brandRecognition from "../assets/images/icon-brand-recognition.svg";
 import detailedRecords from "../assets/images/icon-detailed-records.svg";
 import fullyCustomizable from "../assets/images/icon-fully-customizable.svg";
+import LinksList from "./sections/LinksList";
+import ShortenForm from "./sections/ShortenForm";
 export default class Home extends Component {
+  state = { links: [] };
+
+  /**
+   *
+   * Receiving updated link from child component
+   *
+   */
+  handleSubmit = link => {
+    this.setState({ links: [...this.state.links, link] });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -30,67 +43,14 @@ export default class Home extends Component {
         <section className="statistics-section">
           <Container>
             <section className="shorten-section d-flex flex-column justify-content-center">
-              <Row className="w-100">
-                <Col md={9}>
-                  <Input
-                    placeholder="Shorten a link here..."
-                    className="input-error"
-                  />
-                </Col>
-                <Col md={3}>
-                  <button className="btn btn-cyan">Shorten It!</button>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={12}>
-                  <small className="red-text">Please add a link</small>
-                </Col>
-              </Row>
+              <ShortenForm
+                links={this.state.links}
+                onFormSubmit={this.handleSubmit}
+              />
             </section>
           </Container>
           <Container>
-            {/* <section className="urls-section">
-              <Row>
-                <Col md={12}>
-                  <ul className="list-unstyled urls-list">
-                    <li className="url-box d-flex align-items-center">
-                      <Row className="w-100 mx-auto">
-                        <Col md={6} className="d-flex align-items-center">
-                          <h6 className="mb-0">http://localhost:3000/</h6>
-                        </Col>
-                        <Col
-                          md={6}
-                          className="d-flex align-items-center justify-content-end"
-                        >
-                          <h6 className="cyan-text mb-0">
-                            http://localhost:3000/
-                          </h6>
-                          <button className="btn btn-sm btn-cyan">Copy</button>
-                        </Col>
-                      </Row>
-                    </li>
-                    <li className="url-box d-flex align-items-center">
-                      <Row className="w-100 mx-auto">
-                        <Col md={6} className="d-flex align-items-center">
-                          <h6 className="mb-0">http://localhost:3000/</h6>
-                        </Col>
-                        <Col
-                          md={6}
-                          className="d-flex align-items-center justify-content-end"
-                        >
-                          <h6 className="cyan-text mb-0">
-                            http://localhost:3000/
-                          </h6>
-                          <button className="btn btn-sm btn-violet">
-                            Copied!
-                          </button>
-                        </Col>
-                      </Row>
-                    </li>
-                  </ul>
-                </Col>
-              </Row>
-            </section> */}
+            <LinksList links={this.state.links} />
             <Row>
               <Col md={12} className="d-flex flex-column align-items-center">
                 <h2 className="dark-blue-text">Advanced Statistics</h2>

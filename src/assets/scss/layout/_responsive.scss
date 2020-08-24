@@ -48,13 +48,43 @@
     padding: 0 15px;
     background: $dark-violet url("../../images/bg-shorten-mobile.svg") no-repeat
       right top;
-    .form-control {
-      margin-bottom: 15px;
+    .btn-cyan {
+      margin-top: 15px;
+    }
+  }
+
+  .urls-section {
+    width: 98%;
+    min-height: 140px;
+    .urls-list {
+      .url-box {
+        min-height: 140px;
+        padding: 0;
+        .row {
+          .col-md-6,
+          .col-md-4 {
+            display: flex;
+            justify-content: flex-start !important;
+            align-items: center;
+            h6 {
+              margin-bottom: 10px !important;
+            }
+          }
+        }
+        .btn-cyan,
+        .btn-violet {
+          min-height: 40px;
+          min-width: 100%;
+        }
+      }
     }
   }
 
   .statistics-section {
-    padding: 150px 0 100px 0;
+    padding: 120px 0 100px 0;
+    h2 {
+      margin-top: 0px;
+    }
     .subtitle {
       width: 100%;
       margin-top: 10px;
