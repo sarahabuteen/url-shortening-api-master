@@ -53,7 +53,9 @@ export default class Home extends Component {
             <LinksList links={this.state.links} />
             <Row>
               <Col md={12} className="d-flex flex-column align-items-center">
-                <h2 className="dark-blue-text">Advanced Statistics</h2>
+                <h2 className="dark-blue-text text-center">
+                  Advanced Statistics
+                </h2>
                 <p className="grayish-violet-text subtitle">
                   Track how your links are performing across the web with our
                   advanced statistics dashboard.
@@ -107,7 +109,9 @@ export default class Home extends Component {
           <Container>
             <Row>
               <Col md={12} className="d-flex flex-column align-items-center">
-                <h2 className="text-white">Boost your links today</h2>
+                <h2 className="text-white text-center">
+                  Boost your links today
+                </h2>
                 <button className="btn btn-cyan">Get Started</button>
               </Col>
             </Row>
