@@ -23,8 +23,12 @@ export default class ShortenForm extends Component {
   shortenUrl = link => {
     this.setState({ loading: true, disabled: true });
     axios
-      .post("https://rel.ink/api/links/", {
-        url: link
+      .post("https://api.shrtco.de/v2/shorten",    
+      {},
+      {
+        params: {
+          url: link,
+        }
       })
       .then(response => {
         this.setState({ loading: false, disabled: false });
@@ -67,6 +71,7 @@ export default class ShortenForm extends Component {
         <Row>
           <Col md={9}>
             <Input
+              name="link"
               type="url"
               placeholder="Shorten a link here..."
               className={inputError ? "input-error" : null}
